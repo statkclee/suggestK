@@ -1,0 +1,102 @@
+---
+title: "SuggestK Vignette"
+author: "Victor Lee"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```
+
+The package crawls search terms from the major search engines in Korea; 
+[daum](https://www.daum.net/), [naver](https://www.naver.com/) and [google](https://www.google.com/). The usage is straightforward.
+
+1. select search engine function and run that function
+    - daum: `daum_keyword()`
+    - naver: `naver_keyword()`
+    - google: `google_keyword()`
+1. if you want to visualize search terms relationship, call `suggest_list2df())` function which will convert list data structure to dataframe.
+1. call `visualize_suggest()` function which will transform native dataframe into network object automatically and visualize search term relationship; keyword, 1st search terms, and 2nd search terms. [networkD3](https://cran.r-project.org/web/packages/networkD3/index.html) is a main engine for the newtork visualization.
+
+## Install 
+
+You could install `suggestK` package through [Github](https://github.com/statkclee/suggestK).
+
+``` {r install-suggestK}
+devtools::install_github("statkclee/suggestK")
+library(suggestK)
+```
+
+## Crawl Related Search Terms
+
+### Daum
+
+[daum](https://www.daum.net/) search engine provides very flexible related search results in that if a search term is not used frequently, it will return related keywrods quickly, but it could take a couple of minutes in some cases. 
+
+`daum_keyword()` function returns list datatype such that it will be useful to see related keywords with the `jsonedit()` function in `listviewer` package.
+
+In case of the multiple keyword such as "data scientist", you need to add `+` sign between two search keywords. Unless you add `+` sign, you will not get what you expect.
+****
+
+``` {r daum}
+data_scientist <- daum_keyword("data+scientist")
+str(data_scientist)
+```
+
+### Naver
+
+[naver](https://www.naver.net/) search engine provides only 10 related keywords, which means that the search query can finish very quickly, but if you expect exhaustive related terms, it will give only partial keywords.
+
+`naver_keyword()` function returns list datatype such that it will be useful to see related keywords with the `jsonedit()` function in `listviewer` package.
+
+``` {r naver}
+korea <- naver_keyword("korea")
+str(korea)
+```
+
+### Google
+
+[google](https://www.naver.net/) search engine provides only 10 related keywords such that google suggest query works really fast, but compared with Daum and Naver, **Google Suggest** works differently. You need to be careful when interpreting related terms.
+
+`google_keyword()` function returns list datatype such that it will be useful to see related keywords with the `jsonedit()` function in `listviewer` package.
+
+``` {r google}
+korea <- google_keyword("korea")
+```
+
+## Convert list to dataframe
+
+Once we have list data from the keyword search, it is necessary to convert list to dataframe. The subsequent data analysis, modeling, and visualization tasks prefer dataframe in most cases.
+
+The `suggestK` package has two function for the same task because Korean and non-Korean search engines have different interfaces. `suggest_list2df()` function convert list from  NAVER and DAUM search terms to dataframe whereas `google_list2df()` function convert list from Google search terms to dataframe.
+
+``` {r naver-daum-list2df}
+suggest_list2df(data_scientist, "data+scientist")[[1]] %>% head()
+```
+
+In case of google, it works similarly.
+
+``` {r google-list2df}
+google_list2df(korea, "korea")[[1]] %>% head()
+```
+
+## Visualize
+
+`visualize_suggest()` function enables to visualize Keyword, 1st Search Terms and 2nd Search Terms through `networkD3`.
+To get visualized artefacts, pass the search term and search engine name to `visualize_suggest()` function which will automatically crawl search terms, convert data structure, visualize, and return the results.
+
+``` {r visualize, fig.width=8, fig.height=8}
+visualize_suggest("korea", "google")
+```
+
+
+

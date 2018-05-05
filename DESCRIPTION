@@ -11,8 +11,11 @@ Description: This package aims to crawl related search terms from the major sear
     Based on the tidy dataframe, it supports the netowrk visualization 
     and interactive drilldown of search terms.
 License: MIT
-Depends: tidyverse, networkD3, igraph, glue, urltools, rvest, qdapTools, httr, networkD3
+Depends: tidyverse, networkD3, igraph, glue, urltools, rvest, qdapTools, httr, networkD3, listviewer
 Encoding: UTF-8
 LazyData: true
 Imports: tidyverse
 RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
