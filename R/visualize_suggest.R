@@ -1,8 +1,15 @@
-# Visualize Keyword, 1st Search Terms and 2nd Search Terms
-#
-# The function visualizes the relationships among keyword,
-# 1st search terms and 2nd search terms
-# The only search term is needed to get visualized artefacts.
+#' Visualize Keyword, 1st Search Terms and 2nd Search Terms
+#'
+#' The function visualizes the relationships among keyword,
+#' 1st search terms and 2nd search terms
+#' The only search term is needed to get visualized artefacts.
+#'
+#' @param keyword search terms, keywords which supports Korean as well.
+#' @param search_engine search engine; "daum", "naver", "google"
+#' @keywords network, visualize
+#' @export
+#' @examples
+#' visualize_suggest("druking", "daum")
 
 visualize_suggest <- function(keyword, search_engine) {
 

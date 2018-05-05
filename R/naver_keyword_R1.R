@@ -1,9 +1,16 @@
-# Naver Suggest Search Terms - Search Level 1
-#
-# The function aims to crawl the first level related search terms from the NAVER search engine.
-# The only argument for this function is "Search Term".
-#
-# NAVER url: https://www.naver.com/
+#' Naver Suggest Search Terms - Search Level 1
+#'
+#' The function aims to crawl the first level related search terms from the NAVER search engine.
+#' The only argument for this function is "Search Term".
+#'
+#' NAVER url: https://www.naver.com/
+#'
+#' @param keyword search terms, keywords which supports Korean as well.
+#' @keywords naver, search terms
+#' @export
+#' @examples
+#' naver_keyword_R1("druking")
+
 
 naver_keyword_R1 <- function(keyword) {
 

@@ -1,10 +1,16 @@
-# Google Suggest Search Terms - Search Level 1
-#
-# The function aims to crawl the first level related search terms from the Google search engine.
-# The only argument for this function is "Search Term".
-# It refer to the Google Suggest API.
-#
-# GOOGLE url: https://www.google.com/
+#' Google Suggest Search Terms - Search Level 1
+#'
+#' The function aims to crawl the first level related search terms from the Google search engine.
+#' The only argument for this function is "Search Term".
+#' It refer to the Google Suggest API.
+#'
+#' GOOGLE url: https://www.google.com/
+#'
+#' @param keyword search terms, keywords which supports Korean as well.
+#' @keywords google, search terms
+#' @export
+#' @examples
+#' google_keyword_R1("druking")
 
 google_keyword_R1 <- function(keyword) {
 

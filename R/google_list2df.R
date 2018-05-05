@@ -1,11 +1,18 @@
-# Google List to Dataframe
-#
-# The function convert list to dataframe.
-# It receives the input from the Daum related search terms
-# in the form of list data structure.
-# It convert the list datatype into the dataframe.
-#
-# The return ouput will be used for the subsequent data analysis and visualization
+#' Google List to Dataframe
+#'
+#' The function convert list to dataframe.
+#' It receives the input from the Google related search terms
+#' in the form of list data structure.
+#' It convert the list datatype into the dataframe.
+#'
+#' The return ouput will be used for the subsequent data analysis and visualization
+#'
+#' @param input_list Google search terms result which must be list datatype.
+#' @param keyword search terms, keywords which supports Korean as well.
+#' @keywords google, search terms, list to dataframe, conversion
+#' @export
+#' @examples
+#' google_list2df(druking_list, "druking")
 
 google_list2df <- function(input_list, keyword) {
 

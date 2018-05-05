@@ -1,13 +1,18 @@
-# Google Suggest Search Terms - Search Level 2
-#
-# The function aims to crawl the second level related search terms from the Google search engine.
-# The only argument for this function is "Search Terms".
-# This function retrieves the google_keyword_R1 function in order to get the related search terms from the intial search term.
-# It iterates crawling the individual search terms until it consumes all the level 1 search terms.
-# It refer to the Google Suggest API.
-#
-# GOOGLE url: https://www.google.com/
-
+#' Google Suggest Search Terms - Search Level 2
+#'
+#' The function aims to crawl the second level related search terms from the Google search engine.
+#' The only argument for this function is "Search Terms".
+#' This function retrieves the google_keyword_R1 function in order to get the related search terms from the intial search term.
+#' It iterates crawling the individual search terms until it consumes all the level 1 search terms.
+#' It refer to the Google Suggest API.
+#'
+#'# GOOGLE url: https://www.google.com/
+#'
+#' @param keyword search terms, keywords which supports Korean as well.
+#' @keywords google, search terms
+#' @export
+#' @examples
+#' google_keyword("druking")
 
 google_keyword <- function(keyword) {
 

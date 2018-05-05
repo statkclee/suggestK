@@ -1,11 +1,17 @@
-# Daum Suggest Search Terms - Search Level 2
-#
-# The function aims to crawl the second level related search terms from the DAUM search engine.
-# The only argument for this function is "Search Terms".
-# This function retrieves the daum_keyword_R1 function in order to get the related search terms from the intial search term.
-# It iterates crawling the individual search terms until it consumes all the level 1 search terms.
-#
-# DAUM url: https://www.daum.net/
+#' Daum Suggest Search Terms - Search Level 2
+#'
+#' The function aims to crawl the second level related search terms from the DAUM search engine.
+#' The only argument for this function is "Search Terms".
+#' This function retrieves the daum_keyword_R1 function in order to get the related search terms from the intial search term.
+#' It iterates crawling the individual search terms until it consumes all the level 1 search terms.
+#'
+#' DAUM url: https://www.daum.net/
+#'
+#' @param keyword search terms, keywords which supports Korean as well.
+#' @keywords daum, search terms
+#' @export
+#' @examples
+#' daum_keyword("druking")
 
 daum_keyword <- function(keyword) {
 
