@@ -21,7 +21,8 @@ It convert the list datatype into the dataframe.
 The return ouput will be used for the subsequent data analysis and visualization
 }
 \examples{
-suggest_list2df(druking_list, "druking")
+korea_list <- daum_keyword("korea")
+suggest_list2df(korea_list, "korea")
 }
 \keyword{conversion}
 \keyword{dataframe,}

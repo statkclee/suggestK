@@ -18,7 +18,7 @@ It refer to the Google Suggest API.
 GOOGLE url: https://www.google.com/
 }
 \examples{
-google_keyword_R1("druking")
+google_keyword_R1("korea")
 }
 \keyword{google,}
 \keyword{search}

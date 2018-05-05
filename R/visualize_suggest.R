@@ -9,7 +9,7 @@
 #' @keywords network, visualize
 #' @export
 #' @examples
-#' visualize_suggest("druking", "daum")
+#' visualize_suggest("korea", "google")
 
 visualize_suggest <- function(keyword, search_engine) {
 

@@ -1,20 +1,20 @@
 Package: suggestK
 Type: Package
-Title: Crawl and Visulaize Related Search Terms from the Major Search Engines; Google, Naver, and Daum.
+Title: Crawl and Visualize Related Search Terms from the Major Search Engines in Korea
 Version: 0.1.0
 Author: Victor Lee
-Maintainer: The package maintainer <kwangchun.lee.7@gmail.com>
-Description: This package aims to crawl related search terms from the major search engines. 
+Maintainer: Victor Lee <kwangchun.lee.7@gmail.com>
+Description: Crawl related search terms from the major search engines; Google, Naver, and Daum. 
     Because the major search engines in Korea have different interfaces, 
     each has its own crawling functions.
-    The crawling function returns dataframe suitable for network visualizaion.
-    Based on the tidy dataframe, it supports the netowrk visualization 
-    and interactive drilldown of search terms.
-License: MIT
-Depends: tidyverse, networkD3, igraph, glue, urltools, rvest, qdapTools, httr, networkD3, listviewer
+    The crawling function returns dataframe suitable for network visualization.
+    Based on the tidy dataframe, it supports the network visualization 
+    and interactive traverse of search terms.
+License: GPL-3
+Depends: tidyverse, igraph, glue, urltools, rvest, qdapTools, httr, networkD3, devtools
+Imports: tidyverse, igraph, glue, urltools, rvest, qdapTools, httr, networkD3, devtools
 Encoding: UTF-8
 LazyData: true
-Imports: tidyverse
 RoxygenNote: 6.0.1
 Suggests: knitr,
     rmarkdown

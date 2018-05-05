@@ -25,7 +25,7 @@ The package crawls search terms from the major search engines in Korea;
     - naver: `naver_keyword()`
     - google: `google_keyword()`
 1. if you want to visualize search terms relationship, call `suggest_list2df())` function which will convert list data structure to dataframe.
-1. call `visualize_suggest()` function which will transform native dataframe into network object automatically and visualize search term relationship; keyword, 1st search terms, and 2nd search terms. [networkD3](https://cran.r-project.org/web/packages/networkD3/index.html) is a main engine for the newtork visualization.
+1. call `visualize_suggest()` function which will transform native dataframe into network object automatically and visualize search term relationship; keyword, 1st search terms, and 2nd search terms. [networkD3](https://CRAN.R-project.org/package=networkD3) is a main engine for the newtork visualization.
 
 ## Install 
 

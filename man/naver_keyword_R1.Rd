@@ -17,7 +17,7 @@ The only argument for this function is "Search Term".
 NAVER url: https://www.naver.com/
 }
 \examples{
-naver_keyword_R1("druking")
+naver_keyword_R1("data+scientist")
 }
 \keyword{naver,}
 \keyword{search}

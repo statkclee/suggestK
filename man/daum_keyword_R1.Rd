@@ -17,7 +17,7 @@ The only argument for this function is "Search Term".
 DAUM url: https://www.daum.net/
 }
 \examples{
-daum_keyword_R1("druking")
+daum_keyword_R1("data+scientist")
 }
 \keyword{daum,}
 \keyword{search}

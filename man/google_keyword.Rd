@@ -20,7 +20,7 @@ It refer to the Google Suggest API.
 # GOOGLE url: https://www.google.com/
 }
 \examples{
-google_keyword("druking")
+google_keyword("korea")
 }
 \keyword{google,}
 \keyword{search}

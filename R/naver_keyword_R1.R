@@ -9,7 +9,7 @@
 #' @keywords naver, search terms
 #' @export
 #' @examples
-#' naver_keyword_R1("druking")
+#' naver_keyword_R1("data+scientist")
 
 
 naver_keyword_R1 <- function(keyword) {

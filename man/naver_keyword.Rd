@@ -16,7 +16,7 @@ This function retrieves the naver_keyword_R1 function in order to get the relate
 It iterates crawling the individual search terms until it consumes all the level 1 search terms.
 }
 \examples{
-naver_keyword("druking")
+naver_keyword("korea")
 }
 \keyword{naver,}
 \keyword{search}

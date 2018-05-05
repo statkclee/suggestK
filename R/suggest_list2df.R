@@ -12,7 +12,8 @@
 #' @keywords daum, naver, search terms, list to dataframe, conversion
 #' @export
 #' @examples
-#' suggest_list2df(druking_list, "druking")
+#' korea_list <- daum_keyword("korea")
+#' suggest_list2df(korea_list, "korea")
 
 
 suggest_list2df <- function(input_list, keyword) {

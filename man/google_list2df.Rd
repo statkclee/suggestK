@@ -21,7 +21,8 @@ It convert the list datatype into the dataframe.
 The return ouput will be used for the subsequent data analysis and visualization
 }
 \examples{
-google_list2df(druking_list, "druking")
+korea_list <- google_keyword("korea")
+google_list2df(korea_list, "korea")
 }
 \keyword{conversion}
 \keyword{dataframe,}

@@ -11,7 +11,7 @@
 #' @keywords naver, search terms
 #' @export
 #' @examples
-#' naver_keyword("druking")
+#' naver_keyword("korea")
 
 naver_keyword <- function(keyword) {
 

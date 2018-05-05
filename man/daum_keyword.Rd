@@ -19,7 +19,7 @@ It iterates crawling the individual search terms until it consumes all the level
 DAUM url: https://www.daum.net/
 }
 \examples{
-daum_keyword("druking")
+daum_keyword("data+scientist")
 }
 \keyword{daum,}
 \keyword{search}

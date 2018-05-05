@@ -10,7 +10,7 @@
 #' @keywords google, search terms
 #' @export
 #' @examples
-#' google_keyword_R1("druking")
+#' google_keyword_R1("korea")
 
 google_keyword_R1 <- function(keyword) {
 

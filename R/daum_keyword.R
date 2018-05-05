@@ -11,7 +11,7 @@
 #' @keywords daum, search terms
 #' @export
 #' @examples
-#' daum_keyword("druking")
+#' daum_keyword("data+scientist")
 
 daum_keyword <- function(keyword) {
 

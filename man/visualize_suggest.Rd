@@ -17,7 +17,7 @@ The function visualizes the relationships among keyword,
 The only search term is needed to get visualized artefacts.
 }
 \examples{
-visualize_suggest("druking", "daum")
+visualize_suggest("korea", "google")
 }
 \keyword{network,}
 \keyword{visualize}

@@ -12,7 +12,7 @@
 #' @keywords google, search terms
 #' @export
 #' @examples
-#' google_keyword("druking")
+#' google_keyword("korea")
 
 google_keyword <- function(keyword) {
 

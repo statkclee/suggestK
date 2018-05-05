@@ -12,7 +12,8 @@
 #' @keywords google, search terms, list to dataframe, conversion
 #' @export
 #' @examples
-#' google_list2df(druking_list, "druking")
+#' korea_list <- google_keyword("korea")
+#' google_list2df(korea_list, "korea")
 
 google_list2df <- function(input_list, keyword) {
 
